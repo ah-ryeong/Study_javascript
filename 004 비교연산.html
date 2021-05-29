@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x, y;
+        x = 10;
+        y = 20;
+        z = '10'; // '' -> 문자열
+
+        document.write(x > y, "<br>");
+        document.write(x < y, "<br>");
+        document.write(x >= y, "<br>");
+        document.write(x <= y, "<br>");
+
+        // == 두개일 때는 type 을 고려 X , 숫자와 문자 인식 X
+        document.write(`x == z : ${x == z} <br>`);
+        // === 세개일 때는 type 고려함 , 숫자와 문자 인식 
+        document.write(`x ===z : ${x === z} <br>`);
+        // != 다르다
+        document.write(`x !=y : ${x != y} <br>`);
+        document.write(`x !=10 : ${x != 10} <br>`);
+        
+
+    </script>
+</body>
+</html>
