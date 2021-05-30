@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // array의 내장함수
+        let 과일 = ['사과', '수박', '복숭아', '딸기', '바나나'];
+        let 과일선물 = ['체리', '멜론'];
+
+        document.write(`과일 : ${과일} <br>`);
+        // 과일의 마지막을 꺼낼거임
+        // document.write(`과일.pop() : ${과일.pop()} <br>`);
+        // document.write(`과일 : ${과일} <br>`); // 바나나 빠져있음
+
+        let 꺼낸과일 = 과일.pop();
+        document.write(`과일.pop : ${꺼낸과일} <br>`);
+        document.write(`과일 : ${과일} <br>`);
+        // 과일 다시 넣어주기, 해당 함수가 return 하는 값은 과일의 갯수임
+        document.write(`과일 : ${과일.push(꺼낸과일)} <br>`); // 5 원소의 합
+        document.write(`과일: ${과일} <br>`);
+
+        document.write(`--------------- <br>`);
+
+        let 문자열 = 과일.toString();
+        document.write(`과일.toString() : ${과일.toString()} <br>`);
+        document.write(`과일.toString()[0] : ${문자열[0]} <br>`);
+        // join이 되면 문자열이 된다.
+        document.write(`과일.join('!!') : ${과일.join('!!')} <br>`);
+        // 앞에 것을 꺼내고 넣을 때 사용 : shift , 배열이 바뀌기 때문에 성능면에서 push보다 떨어짐 
+        document.write(`과일.shift() : ${과일.shift()} <br>`);
+        document.write(`과일: ${과일} <br>`);
+        document.write(`과일.unshift() : ${과일.unshift('망고')} <br>`);
+        document.write(`과일: ${과일} <br>`);
+        // 맨 앞에 값을 넣고 싶음
+        document.write(`과일.splice(1, 0, '한라봉') : ${과일.splice(1 , 0, '한라봉')} <br>`); // return 값이 없어서 안 보임 
+        document.write(`과일: ${과일} <br>`); // 한라봉 들어간거 확인가능
+        // 만약 한 개의 요소를 대체하고 싶다면, 1번자리에 1개를 대체 
+        // document.write(`과일.splice(1, 1, '한라봉') : ${과일.splice(1 , 1, '한라봉')} <br>`);
+       
+        // 어디서부터 어디까지 자른다. slice (마지막 인덱스 전에 것을 자름 -> 0, 1 자름)
+        document.write(`과일.slice(0, 2) : ${과일.slice(0, 2)} <br>`);
+
+        // concat, 새로운 array 를 만들지만 과일은 건들지 X
+        document.write(`과일.concat(과일선물) : ${과일.concat(과일선물)} <br>`);
+        document.write(`과일: ${과일} <br>`);
+
+        // sort, 사전식정렬
+        document.write(`과일.sort() : ${과일.sort()} <br>`);
+        document.write(`과일: ${과일} <br>`);
+        document.write(`['1', '11', '2', '22'].sort() : ${['1', '11', '2', '22'].sort()} <br>`);
+        
+        //reverse , 역순
+        document.write(`과일.reverse() : ${과일.reverse()} <br>`);
+        document.write(`과일: ${과일} <br>`);
+        
+        // length -> 함수아님 ()없음
+        document.write(`['1', '11', '2', '22'].length : ${['1', '11', '2', '22'].length} <br>`);
+
+    </script>
+</body>
+</html>

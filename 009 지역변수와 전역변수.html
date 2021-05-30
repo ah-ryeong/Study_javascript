@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var z = 100;
+        // 지역변수, 전역변수
+        function sum(x) { // x는 매개변수 (parameter)이면서 전역변수 (Local val)
+            let y = 50; // y는 지역변수
+            z = z + y;
+            return x + y;
+        }
+
+        document.write(sum(10)); // 60, 10은 전달인자 (argument)
+        document.write(`<br>`);
+        // x와 y는 지역변수라 sum 안에서만 찾을 수 있음
+        // document.write(x, y); // 출력X
+        document.write(z); // 150
+        
+    </script>    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 다차원배열 , 배열안의 배열, 배열안의 배열의 배열 , 배열안에 오브젝트 안에 배열안에 등등
+        // 여러가지 형태의 중첩
+        let 전교점수 = [
+                            // 1반
+                            [[10, 20, 30, 40, {name: 'Winter', age: 10}], 
+                            [20, 30, 40, 50, 60]],
+                            // 2반
+                            [[10, 20, 30, 40, 50], 
+                            [20, 30, 40, 50, 60]],
+                        ]
+
+        document.write(전교점수[0][0][4]['name'], '<br>');
+        document.write(전교점수[0][1][4]['name'], '<br>'); // undefined
+
+        // matrix
+        let m = [[1, 2, 3],
+                     [1, 2, 3],
+                     [1, 2, 3]]
+
+    </script>
+</body>
+</html>

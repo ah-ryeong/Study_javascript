@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 함수선언문, 어디서든 sum 호출 가능 
+        // document.write가 위에 있든 아래에 있든 실행가능
+        document.write(sum(10, 20));
+        function sum(x, y) {
+            return x+y;
+        }
+        document.write(sum(10, 20));
+
+        // 함수표현식
+        // document.write(sumXY(10, 20)); // 여기 있으면 실행 X
+        let sumXY = function(x, y) {
+            return x + y;
+        };
+        document.write(sumXY(10, 20)); // 여기는 실행됨
+
+        let sumXYcopy = sumXY;
+        document.write(sumXYcopy(10, 20));
+        document.write(`<br>`)
+
+        // 콜백함수 , 정의된 함수를 문자로 전달
+        function summ(x, y, c) {
+            c(x + y);
+            return x + y;
+        }
+
+        function documentWrite(s) {
+            document.write(`콜백함수`,s);
+        }
+
+        summ(10, 20, documentWrite); // 30
+    </script>    
+</body>
+</html>
