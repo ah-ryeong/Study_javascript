@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Number 관련 함수
+        let n = 10000;
+        let nFloat = 10000.123123123;
+        let s = '1,000,000';
+
+        document.write(`n : ${n} <br>`);
+        document.write(`n.toLocaleString() : ${n.toLocaleString()} <br>`);
+        
+        document.write(`s : ${s} <br>`);
+        document.write(`s.replace(/,/g, '') : ${s.replace(/,/g, '')} <br>`);
+        
+        document.write(`parseInt(s, 10) : ${parseInt(s, 10)} <br>`);
+        
+        document.write(`n.toFixed(10) : ${n.toFixed(10)} <br>`);
+        document.write(`nFloat.toFixed(3) : ${nFloat.toFixed(3)} <br>`);
+        
+        document.write(`nFloat.toExponential(4) : ${nFloat.toExponential(4)} <br>`);
+        
+        // number 의 형변환
+        document.write(`Number(true) : ${Number(true)} <br>`); // 1
+        document.write(`Number(false) : ${Number(false)} <br>`); // 0
+        document.write(`Number('') : ${Number('')} <br>`); // 0
+        document.write(`Number(' ') : ${Number(' ')} <br>`); // 0
+        document.write(`Number('hello') : ${Number('hello')} <br>`); // NaN
+        document.write(`Number('10 20') : ${Number('10 20')} <br>`); // NaN
+        document.write(`Number('10     ') : ${Number('10     ')} <br>`); // 10
+        document.write(`Number('     10') : ${Number('     10')} <br>`); // 10
+        document.write(`Number('     10     ') : ${Number('     10     ')} <br>`); // 10
+        
+        
+        document.write(`Math.PI : ${Math.PI} <br>`); // pi
+        document.write(`Math.round(4.7) : ${Math.round(4.7)} <br>`); // 반올림한 자연수의 값 5
+        document.write(`Math.pow(2, 8) : ${Math.pow(2, 8)} <br>`); // 2의 8승
+        document.write(`Math.sqrt(64) : ${Math.sqrt(64)} <br>`); // 제곱근 8
+        document.write(`Math.abs(-5) : ${Math.abs(-5)} <br>`); // 절대값 5
+        document.write(`Math.random() : ${Math.random()*10} <br>`); // 0부터 10까지 랜덤
+        document.write(`Math.max(10, 20, 30, 40, 50) : ${Math.max(10, 20, 30, 40, 50)} <br>`); // 최대값
+        document.write(`Math.min(10, 20, 30, 40, 50) : ${Math.min(10, 20, 30, 40, 50)} <br>`); // 최소값
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Number
+        // let number = 1e9; // 10의 9승
+        // let number = 123e-5;
+        // let number = 1.23e9;
+        // let number = 0b1010; // 이진수 0, 1 -> 10
+        // let number = 0o12; // 8진수 0~7 -> 10
+        // let number = 0xff; // 16진수 0~f -> 10
+        // let number = parseInt('1010', 2); // 주로 10진법으로 많이 씀
+        let number = parseFloat('13.3px.10', 10);
+
+        // document.write(number, 0b1010 === 0o12 , '<br>');
+        document.write(number, '<br>');
+
+        // 부정확 연산
+        document.write(0.1+0.2 == 0.3, '<br>'); // false
+        document.write(99999999999999999999, '<br>'); // 100000000000000000000 -> 1개가 가산돼서 나옴
+    </script>
+</body>
+</html>
