@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Set
+        // 중복을 허락하지 않는 집합의 성질
+        let s = new Set('abcdeeee');
+        console.log(s);
+        // 중복을 제거한 사이즈를 알고 싶을 때
+        console.log(s.size);
+
+        // 알파벳 추가
+        s.add('f');
+        console.log(s);
+
+        // 순회
+        for (const iterator of s) {
+            console.log(iterator);
+        }
+
+        let ss = new Set('abcdeeee'.split(''));
+        console.log(ss.size);
+
+        ss.delete('b');
+        console.log(ss.has('a'));
+        console.log(ss);
+    </script>
+</body>
+</html>

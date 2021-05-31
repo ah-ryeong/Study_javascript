@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Map, Set
+        // object랑 유사하지만 다른 자료형도 key값으로 받을 수 있음
+        // set : 집합의 속성을 가지고 있음 , 중복허용X
+        let m = new Map();
+
+        m.set('하나', '1'); // map에 자료를 넣겠다.
+        m.set(1, '하나');
+        m.set(true, 1);
+        m.set(false, 0);
+
+        document.write(m.get('하나'), '<br>');
+        document.write(m.get(true), '<br>');
+        document.write(m.has('하나'), '<br>');
+        document.write(m.delete('하나'), '<br>');
+        document.write(m.has('하나'), '<br>');
+        console.log(m, '<br>');
+        document.write((m.size), '<br>');
+
+        for (const iterator of m) {
+            console.log(`m을 순회하고 있습니다. ${iterator}`);
+        }
+        console.log(m.keys());
+        console.log(m.values());
+        console.log(m.entries());
+
+        let temp = new Map([[1, 10],
+        [2, 20],
+        [3, 30],
+        [4, 40]]);
+
+        console.log(temp);
+
+    </script>
+</body>
+</html>
