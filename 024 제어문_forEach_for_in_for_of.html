@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 블로그 정리~!! 자바스크립트의 forIn문과 파이썬의 forIn문은 다름 
+        let array = [10, 20, 30, 40, 50];
+
+        // for
+        for (let i = 0; i < array.length; i++) {
+            document.write(array[i], '<br>');
+        } 
+
+        // forEach
+        array.forEach(e => console.log(e));
+
+        //forIn, 해당 array의 인덱스만 가져옴
+        for (var variable in array) {
+            document.write(array[variable], '<br>');
+        }
+
+        //forOf, array의 요소가 들어옴
+        for (var variable of array) {
+            document.write(variable, '<br>');
+        }
+    </script>
+</body>
+</html>

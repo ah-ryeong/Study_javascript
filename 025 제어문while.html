@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // while, 조건에 부합하는 동안 반복
+        let num = 0;
+
+        while (num < 11) {
+            document.write(num, '<br>');
+            num += 1;
+        }
+
+        // do_while, 최소 한번은 실행하고 while문을 하겠음
+        do {
+            document.write(num, '!!<br>');
+            num +=1;
+        } while (num < 11);
+
+        // 구구단 출력
+        let f = 2;
+        let g = 1;
+        while ( f < 10) {
+            while ( g <10 ) {
+                document.write(`${f} X ${g} = ${f*g} <br>`);
+                f ++;
+            }
+            f = 1;
+            g++;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 다음 str의 평균값을 구하시오 : '5, 4, 10, 2, 5'
+        let s = '5, 4, 10, 2, 5';
+        // let s = prompt(); // 이렇게 사용하면 값을 입력하면 자동으로 평균 계산해줌
+
+        let splitS = s.split(',');
+        console.log('자름 : ',splitS);
+        
+        let sum = 0;
+        for (const iterator of splitS) {
+            sum += Number(iterator);
+        }
+
+        document.write(sum/splitS.length);
+
+    </script>
+</body>
+</html>

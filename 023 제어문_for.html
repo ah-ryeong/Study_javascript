@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 제어문 - 반복문 - for
+        // 숫자를 조건에 만족하는 동안 반복
+        for (var i = 0; i < 10; i ++) {
+            document.write(i, '<br>');
+        }
+
+        // 1 부터 100지 더하기
+        let s = 0;
+        for (var i = 0; i < 101; i ++) {
+            s += i;
+        }
+        
+        document.write(s, '<br>');
+
+        // 1부터 100까지 짝수만 더하기
+        let z = 0;
+        for (var i = 0; i < 101; i +=2) {
+            // document.write(i, '<br>');
+            z += i;
+        }
+        
+        document.write(z, '<br>');
+
+        // 구구단 출력
+        for (var i = 2; i < 10; i ++) {
+            for (var j = 1; j <10; j++) {
+                document.write(`${i} X ${j} = ${i*j} <br>`);
+            }
+        }
+
+        // 3의 배수 이거나 5의 배수인 값을 더해주기
+        s = 0;
+        for (let i = 0; i < 101; i++) {
+            if (i%3 == 0 || i%5 == 0) {
+                document.write(i, '<br>');
+                s+= i;
+            }
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // break, continue
+        let num = 0;
+        while (num < 11) {
+            num ++;
+            if (num > 5) {
+                continue; // 다음 반복문으로 넘어감
+            }
+            document.write(num, '<br>');
+        }
+
+        num = 0;
+        while (num < 11) {
+            num ++;
+            if (num > 5) {
+                break; // 5보다 큰 순간 반복문 종료
+            }
+            document.write(num, '<br>');
+        }
+    </script>
+</body>
+</html>
